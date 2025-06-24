@@ -1,8 +1,37 @@
-Phishing Email Analyzer:
+Phishing Email Analyzer
 
 A user-friendly desktop application built with Python and Tkinter for analyzing .eml email files and raw email text to detect common phishing and spam indicators. This tool integrates with the VirusTotal API to provide reputation checks for URLs and file attachments, helping users identify malicious content.
 
-Features:
+Table of Contents
+
+Features
+
+How it Works
+
+Getting Started
+
+Prerequisites
+
+VirusTotal API Key
+
+Installation
+
+Running the Application
+
+Usage
+
+Risk Scoring Explained
+
+Important Security Considerations
+
+Future Enhancements
+
+Contributing
+
+License
+
+Features
+
 User-Friendly GUI: Intuitive interface built with Tkinter for easy interaction.
 
 Email Input Options:
@@ -53,32 +82,38 @@ Asynchronous Processing: Runs analysis in a separate thread to keep the GUI resp
 
 Detailed Report: Generates a comprehensive, human-readable report summarizing all findings directly in the application.
 
-How it Works:
+How it Works
 
 The analyzer parses the raw structure of an email, including its headers, body (both plain text and HTML), and attachments. It then applies a series of heuristic rules and integrates with the VirusTotal API to identify suspicious patterns, malicious links, and known bad files. A cumulative risk score is calculated, which determines the overall risk level of the email.
 
-Getting Started:
+Getting Started
 
 Prerequisites
+
 Python 3.x installed on your system.
 
 requests Python library.
 
 VirusTotal API Key
+
 Obtain an API Key: Go to the VirusTotal website and sign up for a free account. Once logged in, you can find your API key in your profile settings.
 
 Update the Code: Open the phishing_analyzer_gui.py file. Locate the line:
 
 VIRUSTOTAL_API_KEY = "YOUR_VIRUSTOTAL_API_KEY"
 
+
+
 Replace "YOUR_VIRUSTOTAL_API_KEY" with the actual API key you obtained from VirusTotal.
 
-Installation:
+Installation
 
 Clone the repository:
 
 git clone https://github.com/your-username/phishing-email-analyzer.git
 cd phishing-email-analyzer
+
+
 
 (Replace your-username with your actual GitHub username if you create a repository).
 
@@ -86,13 +121,17 @@ Install dependencies:
 
 pip install requests
 
-Running the Application:
+
+
+Running the Application
 
 After setting up the API key and installing dependencies, you can run the application from your terminal:
 
 python phishing_analyzer_gui.py
 
-Usage:
+
+
+Usage
 
 Select EML File: Click the "Browse .eml" button and choose an .eml file from your computer.
 
@@ -103,6 +142,7 @@ Clear Inputs: Use the "Remove EML" or "Clear Raw Email" buttons to clear the res
 Analyze: Click the "Analyze Email" button. The analysis report will appear in the "Analysis Report" text area below. The status bar at the bottom will provide real-time updates.
 
 Risk Scoring Explained
+
 The risk score is a heuristic-based system designed to provide an indicative measure of how likely an email is to be phishing or spam. Each detected suspicious indicator contributes a specific number of points to the Overall Risk Score.
 
 Example Scoring:
@@ -136,11 +176,13 @@ CRITICAL (Score >= 80): Highly likely phishing or malicious.
 A higher score indicates more numerous or more severe suspicious indicators.
 
 Important Security Considerations
+
 VirusTotal API Usage: When URLs or file hashes are sent to VirusTotal, they are processed by VirusTotal's public analysis systems. Do not use this tool with highly confidential or sensitive email content/attachments that you do not wish to be publicly analyzed by VirusTotal.
 
 Tool Limitations: This tool provides an indicative analysis based on common phishing patterns and VirusTotal data. It is not a substitute for comprehensive security solutions or expert human analysis. Always exercise caution with suspicious emails.
 
 Future Enhancements
+
 DMARC, SPF, DKIM Verification: Implement checks for email authentication records for more robust sender verification.
 
 Advanced URL Analysis: Include detection for URL redirection chains, homograph attacks (visually similar characters), and domain squatting.
@@ -156,4 +198,5 @@ Configuration File: Allow API keys and thresholds to be configured via a separat
 Export Report: Add functionality to save the analysis report to a file (e.g., PDF, TXT).
 
 Contributing
+
 Feel free to fork this repository, open issues, and submit pull requests. Any contributions to improve the analyzer are welcome!

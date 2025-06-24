@@ -103,7 +103,6 @@ Update the Code: Open the phishing_analyzer_gui.py file. Locate the line:
 VIRUSTOTAL_API_KEY = "YOUR_VIRUSTOTAL_API_KEY"
 
 
-
 Replace "YOUR_VIRUSTOTAL_API_KEY" with the actual API key you obtained from VirusTotal.
 
 Installation
@@ -114,7 +113,6 @@ git clone https://github.com/your-username/phishing-email-analyzer.git
 cd phishing-email-analyzer
 
 
-
 (Replace your-username with your actual GitHub username if you create a repository).
 
 Install dependencies:
@@ -122,13 +120,11 @@ Install dependencies:
 pip install requests
 
 
-
 Running the Application
 
 After setting up the API key and installing dependencies, you can run the application from your terminal:
 
 python phishing_analyzer_gui.py
-
 
 
 Usage

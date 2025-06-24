@@ -1,4 +1,5 @@
-Phishing Email Analyzer 
+Phishing Email Analyzer
+
 A user-friendly desktop application built with Python and Tkinter for analyzing .eml email files and raw email text to detect common phishing and spam indicators. This tool integrates with the VirusTotal API to provide reputation checks for URLs and file attachments, helping users identify malicious content.
 
 Table of Contents

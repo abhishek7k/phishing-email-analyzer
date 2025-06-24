@@ -1,35 +1,8 @@
-Phishing Email Analyzer
+Phishing Email Analyzer:
 
 A user-friendly desktop application built with Python and Tkinter for analyzing .eml email files and raw email text to detect common phishing and spam indicators. This tool integrates with the VirusTotal API to provide reputation checks for URLs and file attachments, helping users identify malicious content.
 
-Table of Contents
-Features
-
-How it Works
-
-Getting Started
-
-Prerequisites
-
-VirusTotal API Key
-
-Installation
-
-Running the Application
-
-Usage
-
-Risk Scoring Explained
-
-Important Security Considerations
-
-Future Enhancements
-
-Contributing
-
-License
-
-Features
+Features:
 User-Friendly GUI: Intuitive interface built with Tkinter for easy interaction.
 
 Email Input Options:
@@ -80,10 +53,12 @@ Asynchronous Processing: Runs analysis in a separate thread to keep the GUI resp
 
 Detailed Report: Generates a comprehensive, human-readable report summarizing all findings directly in the application.
 
-How it Works
+How it Works:
+
 The analyzer parses the raw structure of an email, including its headers, body (both plain text and HTML), and attachments. It then applies a series of heuristic rules and integrates with the VirusTotal API to identify suspicious patterns, malicious links, and known bad files. A cumulative risk score is calculated, which determines the overall risk level of the email.
 
-Getting Started
+Getting Started:
+
 Prerequisites
 Python 3.x installed on your system.
 
@@ -98,7 +73,8 @@ VIRUSTOTAL_API_KEY = "YOUR_VIRUSTOTAL_API_KEY"
 
 Replace "YOUR_VIRUSTOTAL_API_KEY" with the actual API key you obtained from VirusTotal.
 
-Installation
+Installation:
+
 Clone the repository:
 
 git clone https://github.com/your-username/phishing-email-analyzer.git
@@ -110,12 +86,14 @@ Install dependencies:
 
 pip install requests
 
-Running the Application
+Running the Application:
+
 After setting up the API key and installing dependencies, you can run the application from your terminal:
 
 python phishing_analyzer_gui.py
 
-Usage
+Usage:
+
 Select EML File: Click the "Browse .eml" button and choose an .eml file from your computer.
 
 Paste Raw Email: Alternatively, copy the full raw content of an email (e.g., "Show original" from Gmail) and paste it into the "OR paste raw email text here:" box.
